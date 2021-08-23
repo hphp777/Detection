@@ -1,0 +1,12 @@
+# train and val data as 1) directory: path/images/, 2) file: path/images.txt, or 3) list: [path1/images/, path2/images/]
+train: ../data/images
+val: ../data/images
+
+# number of classes
+nc: 8
+
+# class names
+names: ['Atelectasis', 'Cardiomegaly', 'Effusion', 'Infiltrate', 'Mass', 'Nodule', 'Pneumonia', 'Pneumothorax']
+
+# run below
+# cd ./Detection/yolov5; python train.py --img 640 --batch 16 --epochs 20 --data ../x-ray.yaml --weights yolov5x.pt --project=../ --name result --exist-ok
